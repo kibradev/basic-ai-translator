@@ -76,23 +76,6 @@ npm start
 ```
 The frontend will run on `http://localhost:3000`.
 
-### 3. Usage
-- Enter the text you want to translate in the input box.
-- Select the target language.
-- Click the translate button.
-
----
-
-## Sample Screenshot
-![Kibraland Ai Translator](example.png)
-
----
-
-## Development Notes
-- Keep your OpenAI API key secure in the backend.
-- Ensure proper CORS configuration for Flask and React.
-- Add `node_modules` and `__pycache__` directories to your `.gitignore` file before uploading to GitHub.
-
 ```plaintext
 # .gitignore
 node_modules/
