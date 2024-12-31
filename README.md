@@ -1,15 +1,6 @@
-# Kibraland Ai Translator
+# Basic Ai Translator
 
-Kibraland Ai Translator is a web-based translation application that leverages OpenAI's API to perform text translations. The project includes a React.js frontend and a Flask backend.
-
----
-
-## Features
-- Users can input text and translate it into their chosen language.
-- High-quality translation results using OpenAI API.
-- Supported languages: Turkish, English, German, Russian, Chinese.
-
----
+Ai Translator is a web-based translation application that leverages OpenAI's API to perform text translations. The project includes a React.js frontend and a Flask backend.
 
 ## Setup Instructions
 
