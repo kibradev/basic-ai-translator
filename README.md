@@ -37,9 +37,6 @@ pip install openai flask flask-cors
 python app.py
 ```
 
-### Environment Variables
-Use a `.env` file to store your API key securely. Configure the Flask application accordingly.
-
 ---
 
 ## Project Structure
