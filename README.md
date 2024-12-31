@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Kibraland Ai Translator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kibraland Ai Translator is a web-based translation application that leverages OpenAI's API to perform text translations. The project includes a React.js frontend and a Flask backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- Users can input text and translate it into their chosen language.
+- High-quality translation results using OpenAI API.
+- Supported languages: Turkish, English, German, Russian, Chinese.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend (React.js)
 
-### `npm test`
+#### Install Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+#### Run the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Important Files
+- `App.js`: Contains React components.
+- `App.css`: Stylesheet for the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend (Flask)
 
-### `npm run eject`
+#### Required Python Libraries
+Install the required libraries using the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+pip install openai flask flask-cors
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Run the Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+python app.py
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Environment Variables
+Use a `.env` file to store your API key securely. Configure the Flask application accordingly.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
+- `App.js`: React component designed for user input and OpenAI integration.
+- `App.css`: Stylesheet for the application.
 
-### Code Splitting
+### Backend
+- `app.py`: Flask application for integrating with OpenAI API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Steps to Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1. Start the Backend
+```bash
+python app.py
+```
+The backend will run on `http://localhost:5000`.
 
-### Making a Progressive Web App
+### 2. Start the Frontend
+```bash
+npm start
+```
+The frontend will run on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 3. Usage
+- Enter the text you want to translate in the input box.
+- Select the target language.
+- Click the translate button.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Sample Screenshot
+![Kibraland Ai Translator](example.png)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Development Notes
+- Keep your OpenAI API key secure in the backend.
+- Ensure proper CORS configuration for Flask and React.
+- Add `node_modules` and `__pycache__` directories to your `.gitignore` file before uploading to GitHub.
 
-### `npm run build` fails to minify
+```plaintext
+# .gitignore
+node_modules/
+__pycache__/
+.env
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## License
+This project is licensed under the MIT License.
