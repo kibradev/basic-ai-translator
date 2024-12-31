@@ -3,8 +3,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 client = OpenAI(
-    organization='org-4RltGIiMFrB1Hvz1sosL2YVe',
-    api_key='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'
+    organization='',
+    api_key=''
 )
 
 app = Flask(__name__)
