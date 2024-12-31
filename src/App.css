@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: #202025;
+  font-family: "Roboto", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #cfcfcf;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+  color: #8d8d9d;
+  font-weight: 600;
+}
+
+.translate-input {
+  background-color: transparent;
+  width: 43rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  border-top: 1px solid #3c3c41;
+}
+
+.translate-input-box {
+  background-color: #18181c;
+  width: 29rem;
+  border: 1px solid #343437;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px;
+}
+
+.translate-input-box span {
+  padding-left: 1rem;
+    color: #737373;
+    font-size: 22px;
+}
+
+.translate-input-box input {
+  background-color: transparent;
+  width: 25rem;
+  color: #979797;
+  border: 1px;
+  height: 3rem;
+  font-family: Roboto;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.translate-input-box input:focus {
+  outline: 0;
+}
+
+.translate-button {
+  background-color: #4aa0c7;
+  width: 4rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: .8rem;
+  border-radius: 3px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.translate-button span {
+  color: #000;
+}
+
+.output-part {
+  background-color: transparent;
+  margin-top: 1rem;
+  width: 43rem;
+  height: fit-content;
+}
+
+.output-part h3 {
+  color: #ababab;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.output-part h4 {
+  font-size: 1.5rem;
+  color: #d3d3d3;
+}
+
+select {
+  width: 9rem;
+  height: 3.5rem;
+  border-radius: 3px;
+  font-family: Roboto;
+  background: rgb(24, 24, 28);
+  padding-left: .8rem;
+  color: rgb(165, 165, 165);
+  font-weight: 500;
+  border: 1px solid rgb(53, 53, 53);
+  margin-left: .6rem;
+}
+
+select:focus {
+ outline: 0;
+}
